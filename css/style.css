@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0; 
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444;
+ 
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Site header */
+.site-header{
+    background-color: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-nav{
+padding: 0;
+}
+
+.site-header-logo{
+    color: #222;
+    transition: 0.5s ease;
+}
+
+.site-header-logo:hover{
+    color: #DE2E54;
+    transition: 0.5s ease;
+}
+
+.site-header-logo:active{
+    opacity: 0.6;
+}
+
+.site-header-acation{
+    display: flex;
+    align-items: center;
+}
+
+.sitenav-list{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.sitenav-link{
+    margin-right: 32px;
+    text-decoration: none;
+    color: #222;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.sitenav-link:hover{
+    color: #DE2E54;
+    transition: 0.5s;
+}
+
+.sitenav-link:active{
+    opacity: 0.5;
+}
+
+.main-link{
+    display: inline-block;
+    background: #DE2E54;
+    color: #fff;
+    border: 2px solid #DE2E54;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Open Sans' Condensed;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+}
+
+.main-link:hover{
+    background-color: #fff;
+    color: #DE2E54;
+    transition: 0.5s;
+}
+
+.main-link:active{
+    opacity: 0.4;
+    background-color: #DE2E54;
+    color: #fff;
+}
+
+/* Site hero */
+.site-hero{
+    background: #0EB4C1;
+}
+
+.site-hero-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+}
+
+.hero-heading{
+    font-family: 'Open Sans' Condensed;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+    margin-top: 120px;
+    margin-bottom: 16px;
+}
+
+.hero-info{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+}
+
+.hero-img{
+    padding: 0;
+    margin: 0;
+}
+
+.hero-link{
+    background: #DE2E54;
+    font-family: 'Open Sans' Condensed;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 36px;
+    margin-bottom: 120px;
+    transition: 0.5s;
+}
+
+.hero-link:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.hero-link:active{
+    opacity: 0.6;
+}
+
+/* Site-services */
+
+.site-services{
+    background-color: #fff;
+}
+
+.site-services-container{
+width: 844px;
+padding-top: 120px;
+}
+
+.services-heading{
+   font-size: 36px;
+   font-family: 'Open Sans Condensed', sans-serif;
+   color: #000; 
+   text-align: center;
+}
+
+.services-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    margin-top: 80px;
+}
+
+.servisec-info{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+
+}
+
+.info-heading{
+    font-size: 24px;
+    color: #222;
+}
+
+.services-text{
+    border-radius: 24px;
+    box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+    padding: 0;
+    margin: 0;
+}
+
+.services-wrapper{
+   width: 600px;
+   height: 96px;
+   margin-left: 60px;
+   
+}
+
+.services-item{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.services-item-end{
+    display: flex;
+}
+
+.services-main-link{
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+/* Sign up */
+.sign-up{
+    background: #0EB4C1;
+}
+
+.sign-up-container{
+   border: 1px solid #0EB4C1;
+
+}
+
+
+.sign-up-heading{
+    text-align: center;
+    font-family: 'Open Sans' Condensed;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0px;
+    color: #fff;
+    /* margin-bottom: 40px; */
+}
+
+.sign-up-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 64px;
+    padding-top: 40px;
+    
+}
+
+.sign-up-link{
+    color: #fff;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-family: 'Open Sans' Condensed;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.sign-up-link:hover{
+   background-color: #DE2E54;
+   border: #DE2E54;
+}
+
+.sign-up-link:active{
+    opacity: 0.6;
+}
+
+/* Site-footer */
+.site-footer{
+    background-color: #222;
+}
+
+.footer-container{
+padding-top: 24px;
+padding-bottom: 24px;
+
+}
+
+
+.site-footer-logo{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.site-footer-logo:hover{
+    color: #DE2E54;
+    transition: 0.5s;
+}
+
+.site-footer-logo:active{
+    color: gray;
+}
+
+.footer-list{
+    display: flex;
+    list-style: none;
+    margin-left: 318px;
+}
+
+.footer-link{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    margin-left: 32px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-link:hover{
+    color: #DE2E54;
+    transition: 0.5s;
+}
+
+.footer-link:active{
+    color: gray;
+}
+
+.footer-acation{
+    display: flex;
+    
+}
