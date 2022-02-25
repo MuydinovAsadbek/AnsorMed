@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-*:hover{
-    
-}
-
 body{
     margin: 0;
     padding: 0; 
@@ -48,12 +44,12 @@ padding: 0;
 
 .site-header-logo{
     color: #222;
-    transition: 0.5s ease;
+    transition: 0.4s ease;
 }
 
 .site-header-logo:hover{
     color: #DE2E54;
-    transition: 0.5s ease;
+    transition: 0.4s ease;
 }
 
 .site-header-logo:active{
@@ -87,7 +83,7 @@ padding: 0;
 
 .sitenav-link:hover{
     color: #DE2E54;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .sitenav-link:active{
@@ -103,16 +99,16 @@ padding: 0;
     border-radius: 8px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 0.5s;
     font-size: 15px;
     letter-spacing: 2px;
     padding: 12px 24px;
+    transition: 0.4s ease;
 }
 
 .main-link:hover{
     background-color: #fff;
     color: #DE2E54;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .main-link:active{
@@ -172,12 +168,12 @@ padding: 0;
     display: inline-block;
     margin-top: 36px;
     margin-bottom: 120px;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .hero-link:hover{
     opacity: 0.8;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .hero-link:active{
@@ -273,7 +269,6 @@ padding-top: 120px;
     line-height: 43px;
     letter-spacing: 0px;
     color: #fff;
-    /* margin-bottom: 40px; */
 }
 
 .sign-up-list{
@@ -299,12 +294,13 @@ padding-top: 120px;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 2px;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .sign-up-link:hover{
    background-color: #DE2E54;
    border: #DE2E54;
+   transition: 0.4s ease;
 }
 
 .sign-up-link:active{
@@ -325,16 +321,16 @@ padding-bottom: 24px;
 
 .site-footer-logo{
     color: #fff;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .site-footer-logo:hover{
     color: #DE2E54;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .site-footer-logo:active{
-    color: gray;
+    color: #706E6D;
 }
 
 .footer-list{
@@ -350,12 +346,12 @@ padding-bottom: 24px;
     font-weight: 700;
     margin-left: 32px;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .footer-link:hover{
     color: #DE2E54;
-    transition: 0.5s;
+    transition: 0.4s ease;
 }
 
 .footer-link:active{
