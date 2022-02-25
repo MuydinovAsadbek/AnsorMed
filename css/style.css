@@ -16,6 +16,10 @@ body{
  
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 100%;
     max-width: 1140px;
