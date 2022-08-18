@@ -34,6 +34,7 @@ html{
 
 /* Site header */
 .site-header{
+    position: relative;
     background-color: #fff;
 }
 
@@ -46,7 +47,7 @@ html{
 }
 
 .header-nav{
-padding: 0;
+    margin-left: 15px;
 }
 
 .site-header-logo{
@@ -73,11 +74,12 @@ padding: 0;
     list-style: none;
     display: flex;
     padding: 0;
+    margin: 0;
+    margin-left: 10px;
     text-transform: uppercase;
 }
 
 .sitenav-link{
-    margin-right: 32px;
     text-decoration: none;
     color: #222;
     font-family: 'Open Sans';
@@ -86,7 +88,10 @@ padding: 0;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 2px;
-    transition: 0.5s;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 32px;
 }
 
 .sitenav-link:hover{
@@ -100,6 +105,9 @@ padding: 0;
 
 .main-link{
     display: inline-block;
+    padding: 12px 24px;
+    margin-left: 20px;
+    white-space: nowrap;
     background: #DE2E54;
     color: #fff;
     border: 2px solid #DE2E54;
@@ -109,8 +117,6 @@ padding: 0;
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 2px;
-    padding: 12px 24px;
-    transition: 0.4s ease;
 }
 
 .main-link:hover{
@@ -125,6 +131,20 @@ padding: 0;
     color: #fff;
 }
 
+/* MENU-BTN */
+.menu-btn {
+    display: none;
+    padding: 0;
+    margin-left: auto;
+    background-color: transparent;
+    border: 0;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 30px;
+}
+
 /* Site hero */
 .site-hero{
     background: #0EB4C1;
@@ -136,13 +156,18 @@ padding: 0;
     padding-top: 29px;
 }
 
+.hero-content {
+    padding-top: 120px;
+}
+
 .hero-heading{
+    display: block;
+    margin: 0;
     font-size: 36px;
     line-height: 43px;
     letter-spacing: 0px;
     text-align: left;
     color: #fff;
-    margin-top: 120px;
     margin-bottom: 16px;
 }
 
@@ -199,9 +224,10 @@ padding-top: 120px;
 }
 
 .services-heading{
-   font-size: 36px;
-   color: #000;
-   text-align: center;
+    margin: 0;
+    font-size: 36px;
+    color: #000;
+    text-align: center;
 }
 
 .services-list{
@@ -214,6 +240,7 @@ padding-top: 120px;
 }
 
 .servisec-info{
+    margin: 0;
     font-family: 'Open Sans';
     font-size: 16px;
     font-style: normal;
@@ -226,22 +253,25 @@ padding-top: 120px;
 }
 
 .info-heading{
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 24px;
     font-size: 24px;
     color: #222;
 }
 
-.services-text{
+.services-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 24px;
     box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
-    padding: 0;
-    margin: 0;
 }
 
 .services-wrapper{
-   width: 600px;
-   height: 96px;
-   margin-left: 60px;
-
+    width: 100%;
+    max-width: 600px;
+    margin-left: 60px;
 }
 
 .services-item{
@@ -260,6 +290,7 @@ padding-top: 120px;
 
 /* Sign up */
 .sign-up{
+    display: none;
     background: #0EB4C1;
 }
 
@@ -317,6 +348,7 @@ padding-top: 120px;
 /* Site-footer */
 .site-footer{
     background-color: #222;
+    display: none;
 }
 
 .footer-container{
@@ -324,7 +356,6 @@ padding-top: 24px;
 padding-bottom: 24px;
 
 }
-
 
 .site-footer-logo{
     color: #fff;
@@ -367,5 +398,196 @@ padding-bottom: 24px;
 
 .footer-acation{
     display: flex;
+}
 
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 900px) {
+    .sitenav-list {
+        margin-left: 0;
+        order: 5;
+        position: absolute;
+        top: 85px;
+        left: 30px;
+    }
+
+    .hero-content {
+        padding-top: 20px;
+    }
+
+    .hero-heading {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .hero-info {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .hero-link {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .main-link {
+        padding: 7px;
+        font-size: 9px;
+        border: 1px solid red;
+        margin-left: auto;
+    }
+
+    .hero-img {
+        width: 400px;
+        height: 470px;
+        margin-top: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .hero-info {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-heading {
+        font-size: 20px;
+    }
+
+    .hero-img {
+        width: 300px;
+        height: 370px;
+        margin-top: auto;
+    }
+
+    .services-item {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .site-hero-container {
+        display: block;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .hero-info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-link {
+        margin-left: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-img {
+        width: 100%;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services-item {
+    margin-bottom: 40px;
+    }
+
+    .services-wrapper {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .header-nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .site-header-open .menu-btn {
+        z-index: 50;
+    }
+
+    .site-header-open .header-container::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 280px;
+        background-color: rgba(82, 103, 223, 0.7);
+        content: "";
+        z-index: 50;
+    }
+
+    .site-header-open .header-nav {
+        width: 100%;
+        max-width: 180px;
+        display: block;
+        z-index: 51;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        text-align: left;
+    }
+
+    .site-header-open .sitenav-list {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .site-header-open .sitenav-item {
+        margin-right: 0;
+    }
+
+    .site-header-open .sitenav-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .site-header-open .sitenav-link {
+        font-size: 15px;
+        line-height: 11px;
+        letter-spacing: 2px;
+        color: #222;
+    }
+
+    .services-list {
+        padding: 0;
+    }
+
+    .services-item {
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        }
+
+        .services-img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .services-wrapper {
+            margin-left: 0;
+        }
+}
+    @media only screen and (max-width: 450px) {
+
+        .main-link {
+            display: none;
+        }
+
+    }
+
+@media only screen and (max-width: 400px) {
+    .site-header-logo {
+        margin-right: 10px;
+    }
 }

@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="./css/styles.min.css"> -->
 </head>
 <body>
 
     <!-- Site Header -->
-    <header class="site-header">
-        <div class=" header-container container">
+    <header class="site-header site-header-open">
+        <div class="header-container container">
             <a class="site-header-logo" href="index.html">
 
                 <!-- SVG CODE -->
@@ -38,15 +38,16 @@
                 <!-- Site nav -->
                 <nav class="header-nav">
                     <ul class="sitenav-list">
-                        <li><a class="sitenav-link" href="#">Xizmatlar</a></li>
-                        <li><a class="sitenav-link" href="#">Dorilar</a></li>
-                        <li><a class="sitenav-link" href="#">Asal</a></li>
-                        <li><a class="sitenav-link" href="#">Kontaktlar</a></li>
-                        <li><a class="sitenav-link stl" href="#">Blog</a></li>
+                        <li class="sitenav-item"><a class="sitenav-link" href="#">Xizmatlar</a></li>
+                        <li class="sitenav-item"><a class="sitenav-link" href="#">Dorilar</a></li>
+                        <li class="sitenav-item"><a class="sitenav-link" href="#">Asal</a></li>
+                        <li class="sitenav-item"><a class="sitenav-link" href="#">Kontaktlar</a></li>
+                        <li class="sitenav-item"><a class="sitenav-link stl" href="#">Blog</a></li>
                     </ul>
                 </nav>
             </div>
             <a class="main-link" href="#sign-up-index">Qabulga yozilish</a>
+            <button class="menu-btn js-menu-btn" type="button"><img class="menu-icon" src="img/hamburger-menu-i.svg" alt="hamburger menu icon"></button>
         </div>
     </header>
     <main>
@@ -73,7 +74,7 @@
                 <h2 class="services-heading">Xizmatlar</h2>
                 <ul class="services-list">
                     <li class="services-item">
-                        <div class="services-text"> <img class="services-text" src="./img/image 1.jpg" alt="/"></div>
+             <img class="services-img" src="./img/image 1.jpg" alt="/">
                         <div class="services-wrapper">
                             <h3 class="info-heading">Hijoma</h3>
                             <p class="servisec-info">Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan
@@ -86,7 +87,7 @@
                         </div>
                     </li>
                     <li class="services-item">
-                        <div> <img class="services-text" src="./img/image 2.jpg" alt="/"></div>
+             <img class="services-img" src="./img/image 2.jpg" alt="/">
                         <div class="services-wrapper">
                             <h3 class="info-heading">Manual terapiya</h3>
                             <p class="servisec-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus
@@ -97,7 +98,7 @@
                         </div>
                     </li>
                     <li class="services-item">
-                        <div> <img class="services-text" src="./img/image 3.jpg" alt="/"></div>
+                        <div> <img class="services-img" src="./img/image 3.jpg" alt="/"></div>
                         <div class="services-wrapper">
                             <h3 class="info-heading">Zuluk bilan davolash</h3>
                             <p class="servisec-info">Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία —
@@ -113,8 +114,8 @@
                             </p>
                         </div>
                     </li>
-                    <li class="services-item-end">
-                        <div><img class="services-text" src="./img/image 4.jpg" alt="/"></div>
+                    <li class="services-item services-item-end">
+                        <img class="services-img" src="./img/image 4.jpg" alt="/">
                         <div class="services-wrapper">
                             <h3 class="info-heading">Tabiiy dori vositalari</h3>
                             <p class="servisec-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus
@@ -140,6 +141,7 @@
            </div>
         </section>
     </main>
+
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-container container">
@@ -168,6 +170,8 @@
             </section>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
