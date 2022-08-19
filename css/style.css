@@ -105,6 +105,7 @@ html{
 
 .main-link{
     display: inline-block;
+    white-space: nowrap;
     padding: 12px 24px;
     margin-left: 20px;
     white-space: nowrap;
@@ -283,14 +284,13 @@ padding-top: 120px;
     display: flex;
 }
 
-.services-main-link{
+.services-link-wrapper{
     text-align: center;
     margin-bottom: 140px;
 }
 
 /* Sign up */
 .sign-up{
-    display: none;
     background: #0EB4C1;
 }
 
@@ -299,10 +299,11 @@ padding-top: 120px;
 
 }
 
-
 .sign-up-heading{
+    padding-top: 50px;
+    margin: 0;
     text-align: center;
-    font-family: 'Open Sans' Condensed;
+    font-family: 'Open Sans', 'Condensed', 'Arial', sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 43px;
@@ -314,12 +315,20 @@ padding-top: 120px;
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
     padding-bottom: 64px;
     padding-top: 40px;
+}
 
+.sign-up-item:not(:last-child){
+    margin-right: 50px;
 }
 
 .sign-up-link{
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
     color: #fff;
     border: 1px solid #fff;
     box-sizing: border-box;
@@ -327,13 +336,11 @@ padding-top: 120px;
     text-decoration: none;
     padding: 12px 24px;
     text-transform: uppercase;
-    margin-right: 50px;
     font-family: 'Open Sans', 'Condensed', 'Arial', sans-serif;
     font-size: 15px;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 2px;
-    transition: 0.4s ease;
 }
 
 .sign-up-link:hover{
@@ -347,14 +354,15 @@ padding-top: 120px;
 
 /* Site-footer */
 .site-footer{
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-color: #222;
-    display: none;
 }
 
 .footer-container{
-padding-top: 24px;
-padding-bottom: 24px;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .site-footer-logo{
@@ -374,22 +382,26 @@ padding-bottom: 24px;
 .footer-list{
     display: flex;
     list-style: none;
-    margin-left: 318px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-item:not(:last-child) {
+    margin-left: 32px;
 }
 
 .footer-link{
     text-transform: uppercase;
     color: #fff;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
     font-weight: 700;
-    margin-left: 32px;
     text-decoration: none;
-    transition: 0.4s ease;
+    transition: color 0.4s ease;
 }
 
 .footer-link:hover{
     color: #DE2E54;
-    transition: 0.4s ease;
 }
 
 .footer-link:active{
@@ -402,7 +414,6 @@ padding-bottom: 24px;
 
 
 /* RESPONSIVE */
-
 @media only screen and (max-width: 900px) {
     .sitenav-list {
         margin-left: 0;
@@ -442,6 +453,21 @@ padding-bottom: 24px;
         width: 400px;
         height: 470px;
         margin-top: auto;
+    }
+
+    .services-link-wrapper {
+        margin-bottom: 60px;
+    }
+
+    .sign-up-heading {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-container {
+        display: block;
     }
 }
 
@@ -500,6 +526,34 @@ padding-bottom: 24px;
 
     .services-wrapper {
         margin-left: 30px;
+    }
+
+    .services-main-link  {
+        width: 100%;
+    }
+
+    .sign-up-heading {
+        width: 100%;
+    }
+
+    .sign-up-list {
+        flex-direction: column;
+    }
+
+    .sign-up-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .sign-up-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .sign-up-item {
+        width: 100%;
+    }
+
+    .sign-up-link {
+        width: 100%;
     }
 }
 
@@ -577,11 +631,23 @@ padding-bottom: 24px;
         .services-wrapper {
             margin-left: 0;
         }
+
+        .services-link-wrapper {
+            margin-bottom: 60px;
+        }
+
+        .footer-list {
+            display: block;
+        }
+
+        .footer-item:not(:last-child) {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
 }
     @media only screen and (max-width: 450px) {
-
-        .main-link {
-            display: none;
+        .info-heading{
+            margin-bottom: 16px;
         }
 
     }
@@ -589,5 +655,9 @@ padding-bottom: 24px;
 @media only screen and (max-width: 400px) {
     .site-header-logo {
         margin-right: 10px;
+    }
+
+    .sign-up-heading {
+        font-size: 18px;
     }
 }
