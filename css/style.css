@@ -576,7 +576,7 @@ padding-top: 120px;
         right: 0;
         width: 50%;
         height: 280px;
-        background-color: rgba(82, 103, 223, 0.7);
+        background-color: rgba(222, 222, 222, 07);
         content: "";
         z-index: 50;
     }
@@ -650,6 +650,9 @@ padding-top: 120px;
             margin-bottom: 16px;
         }
 
+        .header-link {
+            display: none;
+        }
     }
 
 @media only screen and (max-width: 400px) {
